@@ -1,2 +1,2 @@
 #!/bin/bash
-paste - - | cut -f1
+python3 -c "import sys; [sys.stdout.write(line) for i, line in enumerate(sys.stdin, 1) if i % 2 == 1]"
